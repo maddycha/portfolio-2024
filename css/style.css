@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#desktop {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: #1e1e1e70;
+}
+
+#nav {
+    position: absolute;
+    display: block;
+    z-index: 100;
+    width: 100%;
+    background: #1e1e1e70;
+    height: 36px;
+}
+
+#navitems>* {
+    padding-right: 8px;
+    padding-top: 8px;
+    margin-left: 12px;
+}
+
+#navbg {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    background-image: url(https://64.media.tumblr.com/3e4aa5b89b9fc65c2094eb8527c6a19d/4fe9549e244dadc7-ad/s1280x1920/100afbfb411955e27ebcf3024877d518c1be2209.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+
+.blur {
+    position: absolute;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    height: 36px;
+    width: 100%;
+}
+
+
+#bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -10;
+}
+
+h1 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+body {
+    /*    background: #1e1e1e;*/
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    font-family: "Sporting Grotesque_Regular";
+}
+
+#browser {
+    border: 2px white solid;
+    border-radius: 20px;
+    width: 60%;
+    max-width: 750px;
+    position: absolute;
+    background: #1e1e1e;
+    top: 80px;
+    left: 200px;
+}
+
+#browser-content {
+    margin: 80px;
+}
+
+#browsernav {
+    border-bottom: 2px solid white;
+    height: 40px;
+}
+
+
+#browsernav span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-right: 2px white solid;
+    border-top: none;
+}
+
+#desktopnav{
+    position: absolute;
+    right: 36px;
+    top: 72px;
+}
+
+.folders{
+    width: 72px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 36px;
+}
+
+.folders img{
+    width: 72px;
+    padding-bottom: 4px;
+}
+
+
+
+
+.red {
+    background: #ED6A5E;
+    border-top-left-radius: 18px;
+}
+
+.yellow {
+    background: #F5BD4F;
+}
+
+.green {
+    background: #53AA45;
+}
