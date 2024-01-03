@@ -26,35 +26,38 @@
         <div id="desktopnav">
             <div class="folders">
                 <img class="desktopicon" src="imgs/desktop/trash.png">
-                <h4>trash</h4>
+                <h6>trash</h6>
             </div>
 
             <div class="folders" onclick="aboutme()">
                 <img class="desktopicon" src="imgs/desktop/about.png">
-                <h4>about me</h4>
+                <h6>about me</h6>
             </div>
 
             <div class="folders">
                 <img class="desktopicon" src="imgs/desktop/projects.png">
-                <h4>projects</h4>
+                <h6>projects</h6>
             </div>
 
-            <div class="folders">
+            <div class="folders" onclick="resume()">
                 <img class="desktopicon" src="imgs/desktop/resume.png">
-                <h4>resume</h4>
+                <h6>resume</h6>
             </div>
         </div>
     </div>
     <img id="bg" src="imgs/desktop/desktop.jpeg">
-    <div id="browser">
-        <div id="browsernav">
+
+
+
+    <div id="browser" class="window" onmousedown="aboutmeFront()">
+        <div id="browsernav" class="navbar">
             <div class="controls" onclick="closeAboutme()">
                 <div class="red"></div><div class="yellow"></div><div class="green"></div>
             </div>
             <h2>about me</h2>
             <div class="clear"></div>
         </div>
-        <div id="browser-content">
+        <div id="browser-content" class="content">
             <div class="left-col">
                 <img src="imgs/desktop/me.png" id="me">
                 <h1>hi i'm maddyyyy!</h1>
@@ -71,6 +74,59 @@
             <div class="right-col"><img src=""></div>
         </div>
     </div>
+
+
+
+
+
+    <div id="resume" class="window" onmousedown="resumeFront();">
+        <div id="resumenav" class="navbar">
+            <div class="controls" onclick="closeResume()">
+                <div class="red"></div><div class="yellow"></div><div class="green"></div>
+            </div>
+            <h2>experience</h2>
+            <div class="clear"></div>
+        </div>
+        <div id="resume-content" class="content">
+            <h1>experience</h1>
+            <br>
+            <div class="resume-item">
+                <h3 class="resume-title">product designer</h3>
+                <h4 class="resume-employer">instagram</h4>
+                <p class="resume-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante dui, ullamcorper pellentesque posuere eu, convallis non turpis.
+                </p>
+            </div>
+
+            <div class="resume-item">
+                <h3 class="resume-title">messenger</h3>
+                <h4 class="resume-employer">place where i hated my job</h4>
+                <p class="resume-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante dui, ullamcorper pellentesque posuere eu, convallis non turpis. 
+                </p>
+            </div>
+
+
+            <div class="resume-item">
+                <h3 class="resume-title">product design intern</h3>
+                <h4 class="resume-employer">twitter</h4>
+                <p class="resume-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante dui, ullamcorper pellentesque posuere eu, convallis non turpis. 
+                </p>
+            </div>
+
+
+            <div class="resume-item">
+                <h3 class="resume-title">graphic design intern</h3>
+                <h4 class="resume-employer">nvidia</h4>
+                <p class="resume-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante dui, ullamcorper pellentesque posuere eu, convallis non turpis. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
 
     <footer>
 

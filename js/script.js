@@ -1,18 +1,34 @@
 // Make the DIV element draggable:
-console.log("Hello")
 dragElement(document.getElementById("browser"));
+dragElement(document.getElementById("resume"));
 
 function aboutme(){
   document.getElementById("browser").style.transform = "scale(1)";
+  aboutmeFront();
 }
+
+function resume(){
+  document.getElementById("resume").style.transform = "scale(1)";
+  resumeFront();
+}
+
+function aboutmeFront(){
+  document.getElementById("browser").style.zIndex = "100";
+  document.getElementById("resume").style.zIndex = "50";
+}
+
+function resumeFront(){
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "100";
+}
+
 
 function closeAboutme(){
   document.getElementById("browser").style.transform = "scale(0)";
-
-  console.log("close");
 }
 
 function dragElement(elmnt) {
+
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id+"nav")) {
     // if present, the header is where you move the DIV from:
