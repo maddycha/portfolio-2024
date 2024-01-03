@@ -2,6 +2,16 @@
 console.log("Hello")
 dragElement(document.getElementById("browser"));
 
+function aboutme(){
+  document.getElementById("browser").style.transform = "scale(1)";
+}
+
+function closeAboutme(){
+  document.getElementById("browser").style.transform = "scale(0)";
+
+  console.log("close");
+}
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id+"nav")) {

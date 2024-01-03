@@ -17,6 +17,13 @@ a {
     background: #1e1e1e70;
 }
 
+#me {
+    width: 120px;
+    position: absolute;
+    right: 36px;
+    border-radius: 12px;
+}
+
 #nav {
     position: absolute;
     display: block;
@@ -67,16 +74,19 @@ a {
 h1 {
     font-size: 1.6rem;
     line-height: 2.4rem;
+    font-family: "Sporting Grotesque_Regular";
+
 }
 
 body {
-    /*    background: #1e1e1e;*/
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h1{
-    font-family: "Sporting Grotesque_Regular";
+p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
 
 #browser {
@@ -88,6 +98,14 @@ h1{
     background: #1e1e1e;
     top: 80px;
     left: 200px;
+    transform: scale(0);
+    transition: transform 0.2s ease-out;
+}
+
+.controls{
+    width: 126px;
+    height: 100%;
+    z-index: 20;
 }
 
 #browser-content {
@@ -95,26 +113,44 @@ h1{
 }
 
 #browsernav {
-    border-bottom: 2px solid white;
     height: 40px;
+    background: white;
+    border-radius: 12px 12px 0px 0px;
+    border-bottom: 2px white solid;
+    width: 100%;
 }
 
+h2 {
+    font-weight: 700;
+    padding-top: 12px;
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    top: 0;
+}
 
-#browsernav span {
-    display: inline-block;
+#browsernav div div{
+float: left;
     width: 40px;
     height: 40px;
     border-right: 2px white solid;
     border-top: none;
 }
 
-#desktopnav{
+.clear{
+    float: none;
+}
+
+#desktopnav {
     position: absolute;
     right: 36px;
     top: 72px;
 }
 
-.folders{
+.folders {
     width: 72px;
     text-align: center;
     font-weight: 600;
@@ -122,7 +158,7 @@ h1{
     padding-bottom: 36px;
 }
 
-.folders img{
+.folders img {
     width: 72px;
     padding-bottom: 4px;
 }
