@@ -39,6 +39,14 @@ a {
     margin-left: 12px;
 }
 
+#navitems>a{
+    font-weight: 300;
+}
+
+#navitems>a:first-of-type{
+    font-weight: 600;
+}
+
 #navbg {
     display: block;
     position: absolute;
@@ -113,7 +121,7 @@ p {
 }
 
 #browsernav {
-    height: 40px;
+    height: 24px;
     background: white;
     border-radius: 12px 12px 0px 0px;
     border-bottom: 2px white solid;
@@ -122,7 +130,7 @@ p {
 
 h2 {
     font-weight: 700;
-    padding-top: 12px;
+    padding-top: 6px;
     position: absolute;
     width: 20%;
     left: 40%;
@@ -130,12 +138,13 @@ h2 {
     color: black;
     text-transform: uppercase;
     top: 0;
+    font-size: 12px;
 }
 
 #browsernav div div{
 float: left;
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     border-right: 2px white solid;
     border-top: none;
 }
@@ -154,12 +163,12 @@ float: left;
     width: 72px;
     text-align: center;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     padding-bottom: 36px;
 }
 
 .folders img {
-    width: 72px;
+    width: 64px;
     padding-bottom: 4px;
 }
 
