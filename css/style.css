@@ -47,11 +47,12 @@ a {
 #navitems>* {
     padding-right: 8px;
     padding-top: 8px;
-    margin-left: 12px;
+    margin-left: 18px;
+    display: inline-block;
 }
 
-#navitems>a{
-    font-weight: 300;
+#navitems>p{
+    font-weight: 400;
 }
 
 #navitems>a:first-of-type{
@@ -94,7 +95,7 @@ h1 {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-family: "Sporting Grotesque_Regular";
-
+    padding-bottom: 2rem;
 }
 
 body {
@@ -123,7 +124,12 @@ p {
 
 #resume{
     top: 80px;
-    left: 600px;
+    left: 500px;
+}
+
+#projects{
+    top: 180px;
+    left: 300px;
 }
 
 .controls {

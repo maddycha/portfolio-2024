@@ -1,6 +1,11 @@
 // Make the DIV element draggable:
 dragElement(document.getElementById("browser"));
 dragElement(document.getElementById("resume"));
+dragElement(document.getElementById("projects"));
+
+function findme(){
+  
+}
 
 function aboutme(){
   document.getElementById("browser").style.transform = "scale(1)";
@@ -12,19 +17,41 @@ function resume(){
   resumeFront();
 }
 
+function projects(){
+  document.getElementById("projects").style.transform = "scale(1)";
+  projectsFront();
+}
+
 function aboutmeFront(){
   document.getElementById("browser").style.zIndex = "100";
   document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "50";
 }
 
 function resumeFront(){
   document.getElementById("browser").style.zIndex = "50";
   document.getElementById("resume").style.zIndex = "100";
+  document.getElementById("projects").style.zIndex = "50";
+}
+
+function projectsFront(){
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "100";
+
 }
 
 
 function closeAboutme(){
   document.getElementById("browser").style.transform = "scale(0)";
+}
+
+function closeResume(){
+  document.getElementById("resume").style.transform = "scale(0)";
+}
+
+function closeProjects(){
+  document.getElementById("projects").style.transform = "scale(0)";
 }
 
 function dragElement(elmnt) {
