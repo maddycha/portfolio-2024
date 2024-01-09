@@ -3,9 +3,14 @@ dragElement(document.getElementById("browser"));
 dragElement(document.getElementById("resume"));
 dragElement(document.getElementById("projects"));
 
-function findme(){
-  
-}
+window.addEventListener('click', function(e){
+  if (document.getElementById('find').contains(e.target)){
+    document.getElementById("links").style.display = "block";
+  } else{
+    document.getElementById("links").style.display = "none";
+  }
+});
+
 
 function aboutme(){
   document.getElementById("browser").style.transform = "scale(1)";

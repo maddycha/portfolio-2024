@@ -1,155 +1,188 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <title></title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel='stylesheet' href='sporting-grotesque/font.css' type='text/css'>
-    </head>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel='stylesheet' href='sporting-grotesque/font.css' type='text/css'>
+</head>
 
-    <body>
-        <div id="nav">
-            <div id="navitems">
-                <i class="fa-solid fa-apple-whole"></i><a href="https://maddycha.com/" class="bold"><p>maddycha</p></a><p onclick="findme()">find me</p>
-
+<body>
+    <div id="nav">
+        <div id="navitems">
+            <i id="apple" class="fa-solid fa-apple-whole"></i><a href="https://maddycha.com/" class="bold">
+                <p>maddycha</p>
+            </a><!--
+                 -->
+            <div id="find">
+                <p>find me</p>
+                <ul id="links">
+                    <a href="https://instagram.com/maddycha" target="_blank">
+                        <p>instagram</p>
+                    </a>
+                    <a href="https://twitter.com/maddycha" target="_blank">
+                        <p>twitter</p>
+                    </a>
+                    <a href="https://giphy.com/maddycha" target="_blank">
+                        <p>giphy</p>
+                    </a>
+                </ul>
             </div>
         </div>
-        <div id="navbg">
-            <div class="blur"></div>
-        </div>
+    </div>
+    <div id="navbg">
+        <div class="blur"></div>
+    </div>
 
-        <div id="desktop">
-            <div id="desktopnav">
-                <div class="folders">
-                    <img class="desktopicon" src="imgs/desktop/trash.png">
-                    <h6>trash</h6>
-                </div>
+    <div id="desktop">
+        <div id="desktopnav">
+            <div class="folders">
+                <img class="desktopicon" src="imgs/desktop/trash.png">
+                <h6>trash</h6>
+            </div>
 
-                <div class="folders" onclick="aboutme()">
-                    <img class="desktopicon" src="imgs/desktop/about.png">
-                    <h6>about me</h6>
-                </div>
+            <div class="folders" onclick="aboutme()">
+                <img class="desktopicon" src="imgs/desktop/about.png">
+                <h6>about me</h6>
+            </div>
 
-                <div class="folders" onclick="projects()">
-                    <img class="desktopicon" src="imgs/desktop/projects.png">
-                    <h6>projects</h6>
-                </div>
+            <div class="folders" onclick="projects()">
+                <img class="desktopicon" src="imgs/desktop/projects.png">
+                <h6>projects</h6>
+            </div>
 
-                <div class="folders" onclick="resume()">
-                    <img class="desktopicon" src="imgs/desktop/resume.png">
-                    <h6>resume</h6>
-                </div>
+            <div class="folders" onclick="resume()">
+                <img class="desktopicon" src="imgs/desktop/resume.png">
+                <h6>resume</h6>
             </div>
         </div>
-        <img id="bg" src="imgs/desktop/desktop.jpeg">
+    </div>
+    <img id="bg" src="imgs/desktop/desktop.jpeg">
 
 
 
-        <div id="browser" class="window" onmousedown="aboutmeFront()">
-            <div id="browsernav" class="navbar">
-                <div class="controls" onclick="closeAboutme()">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <h2>about me</h2>
-                <div class="clear"></div>
+    <div id="browser" class="window" onmousedown="aboutmeFront()">
+        <div id="browsernav" class="navbar">
+            <div class="controls" onclick="closeAboutme()">
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
             </div>
-            <div id="browser-content" class="content">
-                <div class="left-col">
-                    <img src="imgs/desktop/me.png" id="me">
-                    <h1>hi i'm maddyyyy!
-                        <br>
-                        welcome 2 my blog :—&#x29;
-                        <br>
-                        ⋆ ˚｡⋆୨୧˚｡˚⋆
-                        </h1>
-                    <p>product designer @ instagram based in ny
-                        <br>i love playing games and spending money
-                        <br>i don't take myself seriously
-                    </p>
-                </div>
-                <div class="right-col"><img src=""></div>
+            <h2>about me</h2>
+            <div class="clear"></div>
+        </div>
+        <div id="browser-content" class="content">
+            <div class="left-col">
+                <img src="imgs/desktop/me.png" id="me">
+                <h1>hi i'm maddyyyy!
+                    <br>
+                    welcome 2 my blog :—&#x29;
+                    <br>
+                    ⋆ ˚｡⋆୨୧˚｡˚⋆
+                </h1>
+                <p>product designer @ instagram based in ny
+                    <br>i love playing games and spending money
+                    <br>i don't take myself seriously
+                </p>
+            </div>
+            <div class="right-col"><img src=""></div>
+        </div>
+    </div>
+
+
+    <div id="projects" class="window" onmousedown="projectsFront();">
+        <div id="projectsnav" class="navbar">
+            <div class="controls" onclick="closeProjects()">
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+            </div>
+            <h2>projects</h2>
+            <div class="clear"></div>
+        </div>
+        <div id="projects-content" class="content">
+
+        </div>
+    </div>
+
+
+    <div id="resume" class="window" onmousedown="resumeFront();">
+        <div id="resumenav" class="navbar">
+            <div class="controls" onclick="closeResume()">
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+            </div>
+            <h2>experience</h2>
+            <div class="clear"></div>
+        </div>
+        <div id="resume-content" class="content">
+            <div class="section-title">
+            <h1>experience</h1>
+            <div class="separator"></div>
+        </div>
+
+            <div class="resume-item">
+                <h3 class="resume-title">Product Designer @ Instagram</h3>
+                <h4 class="resume-employer">2022—Present</h4>
+                <p class="resume-body">
+                    Currently working on the IGD Media team encompassing creation & consumption of media, stickers/gifs, and audio & video calling experiences within direct.
+                </p>
+            </div>
+
+            <div class="resume-item">
+                <h3 class="resume-title">Product Designer @ Messenger</h3>
+                <h4 class="resume-employer">2020—2022</h4>
+                <p class="resume-body">
+                    Lead designer on the Search and Sharing teams. Owned surfaces relating to creating 1:1 and group
+                    messages, message search, advanced content search, broadcast & forwarding flows, and content
+                    discovery for both Messenger and Instagram Direct.
+                </p>
+            </div>
+
+            <div class="resume-item">
+                <h3 class="resume-title">Designer/Illustrator @ Fanhouse</h3>
+                <h4 class="resume-employer">2020</h4>
+                <p class="resume-body">
+                    Created illustrated assets for marketing and in-product usage. Redesigned private and public post composer to improve image/video embeds and include scheduling functionality.
+                </p>
+            </div>
+
+
+            <div class="resume-item">
+                <h3 class="resume-title">Product Design Intern @ Twitter</h3>
+                <h4 class="resume-employer">2019</h4>
+                <p class="resume-body">
+                    Redesigned Periscope profiles with a focus on improving safety for users. Updated UI components for both Periscope and Twitter.
+                </p>
+            </div>
+            <div class="section-title">
+                <h1 id="edu">education</h1>
+                <div class="separator"></div>
+            </div>
+            <div class="resume-item">
+                <h3 class="resume-title">Carnegie Mellon University</h3>
+                <h4 class="resume-employer">Class of 2020</h4>
+                <p class="resume-body">
+                    BDes in Communication Design
+                    <br>
+                    BHCI in Human Computer Interaction
+                    <br>
+                    Minor in Media Design
+                </p>
             </div>
         </div>
 
+    </div>
 
-        <div id="projects" class="window" onmousedown="projectsFront();">
-            <div id="projectsnav" class="navbar">
-                <div class="controls" onclick="closeProjects()">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <h2>projects</h2>
-                <div class="clear"></div>
-            </div>
-            <div id="projects-content" class="content">
+    <footer>
 
-            </div>
-        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/09d51ffe32.js" crossorigin="anonymous"></script>
+</body>
 
-
-        <div id="resume" class="window" onmousedown="resumeFront();">
-            <div id="resumenav" class="navbar">
-                <div class="controls" onclick="closeResume()">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <h2>experience</h2>
-                <div class="clear"></div>
-            </div>
-            <div id="resume-content" class="content">
-                <h1>experience</h1>
-                <div class="resume-item">
-                    <h3 class="resume-title">product designer</h3>
-                    <h4 class="resume-employer">instagram</h4>
-                    <p class="resume-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante dui, ullamcorper pellentesque
-                        posuere eu, convallis non turpis.
-                    </p>
-                </div>
-
-                <div class="resume-item">
-                    <h3 class="resume-title">messenger</h3>
-                    <h4 class="resume-employer">place where i hated my job</h4>
-                    <p class="resume-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante dui, ullamcorper pellentesque
-                        posuere eu, convallis non turpis.
-                    </p>
-                </div>
-
-
-                <div class="resume-item">
-                    <h3 class="resume-title">product design intern</h3>
-                    <h4 class="resume-employer">twitter</h4>
-                    <p class="resume-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante dui, ullamcorper pellentesque
-                        posuere eu, convallis non turpis.
-                    </p>
-                </div>
-
-
-                <div class="resume-item">
-                    <h3 class="resume-title">graphic design intern</h3>
-                    <h4 class="resume-employer">nvidia</h4>
-                    <p class="resume-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante dui, ullamcorper pellentesque
-                        posuere eu, convallis non turpis.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-
-        </footer>
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
-        <script src="https://kit.fontawesome.com/09d51ffe32.js" crossorigin="anonymous"></script>
-    </body>
-
-    </html>
+</html>

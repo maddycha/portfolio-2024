@@ -1,11 +1,42 @@
 body {
     margin: 0;
     height: 100%;
-    overflow: hidden
+    overflow: hidden;
+    vertical-align: auto;
 }
 
 #resume{
     transform: scale(0);
+}
+
+.separator{
+    border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+}
+
+#links{
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    padding: 12px;
+    margin-left: -12px;
+    margin-top: 6px;
+    border: solid rgba(255, 255, 255, 0.3) 1px;
+    display: none;
+}
+
+#nav{
+    vertical-align: top;
+    z-index: 1000;
+}
+
+ul p{
+    line-height: 1.4rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-bottom: solid rgba(255, 255, 255, 0.15) 1px;
+}
+
+ul a:last-of-type p{
+    border-bottom: solid rgba(255, 255, 255, 0.15) 0px;
 }
 
 a {
@@ -46,9 +77,13 @@ a {
 
 #navitems>* {
     padding-right: 8px;
-    padding-top: 8px;
+    padding-top: 6px;
     margin-left: 18px;
-    display: inline-block;
+    float: left;
+}
+
+#apple{
+    padding-top: 10px;
 }
 
 #navitems>p{
@@ -92,10 +127,18 @@ a {
 }
 
 h1 {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     font-family: "Sporting Grotesque_Regular";
-    padding-bottom: 2rem;
+    padding-bottom: 1.8rem;
+}
+
+.section-title h1{
+    padding-bottom:0.4rem;
+}
+
+.section-title{
+    margin-bottom: 1rem;
 }
 
 body {
@@ -106,7 +149,11 @@ body {
 p {
     line-height: 1.5rem;
     font-size: 0.9rem;
-    opacity: 0.7;
+    opacity: 0.8;
+}
+
+#navitems p{
+    opacity: 1;
 }
 
 .window {
@@ -164,9 +211,32 @@ h2 {
     font-size: 12px;
 }
 
+#edu{
+    margin-top: 3rem;
+}
+
 #resume-content{
     height: 360px;
     overflow-y:scroll;
+}
+
+.resume-item{
+    margin-bottom: 2.4rem;
+}
+
+.resume-item:last-child{
+    margin-bottom: 0;
+}
+
+.resume-employer{
+    opacity: .5;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+.resume-body{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
 }
 
 ::-webkit-scrollbar {
@@ -185,10 +255,6 @@ h3{
 
 h4{
     margin-bottom: 8px;
-}
-
-.resume-item{
-    margin-bottom: 40px;
 }
 
 .navbar div div{
