@@ -66,15 +66,14 @@
 
     <div class="browser-container" onclick="orderDiv(this)">
         <div id="browser" class="window">
-            <div class="white-bg">
+
             <div id="browsernav" class="navbar">
-                <div class="controls" onclick="closeAboutme()">
-                    <div class="red"></div>
+                <div class="controls">
+                    <div class="red" onclick="closeAboutme()"></div>
                     <div class="yellow"></div>
                     <div class="green"></div>
                 </div>
                 <h2>about me</h2>
-                <div class="clear"></div>
                 <div id="search-bar">
                     <div id="search-inside" class="center">
                         <i id="left-arrow" class="fa-solid fa-arrow-left"></i>
@@ -83,7 +82,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+
+
             <div id="browser-content" class="content">
                 <div class="left-col">
                     <h1>hi i'm maddyyyy!
@@ -106,29 +106,29 @@
     <div class="projects-container" onclick="orderDiv(this)">
         <div id="projects" class="window">
             <div class="white-bg">
-            <div id="projectsnav" class="navbar">
-                <div class="controls" onclick="closeProjects()">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
+                <div id="projectsnav" class="navbar">
+                    <div class="controls">
+                        <div class="red" onclick="closeProjects()"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <h2>wardrobe</h2>
+                    <div class="clear"></div>
+                    <div id="wardrobe-icons">
+                        <div class="left-col-i">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="float-right">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                            <i class="fa-solid fa-list"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
                 </div>
-                <h2>wardrobe</h2>
             </div>
-            <div class="clear"></div>
-                <div id="wardrobe-icons">
-                    <div class="left-col-i">
-                    <i class="fa-solid fa-chevron-left"></i>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
-                <div class="float-right">
-                    <i class="fa-solid fa-table-cells-large"></i>
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-ellipsis"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <div class="clear"></div>
-                </div>
-            </div>
-        </div>
             <div class="clear"></div>
 
             <div class="clear"></div>
@@ -173,8 +173,8 @@
     <div class="tops-container" onclick="orderDiv(this)">
         <div id="tops" class="window">
             <div id="topsnav" class="navbar">
-                <div class="controls" onclick="closeTops()">
-                    <div class="red"></div>
+                <div class="controls">
+                    <div class="red" onclick="closeTops()"></div>
                     <div class="yellow"></div>
                     <div class="green"></div>
                 </div>
@@ -364,8 +364,8 @@
     <div class="bottoms-container" onclick="orderDiv(this)">
         <div id="bottoms" class="window">
             <div id="bottomsnav" class="navbar">
-                <div class="controls" onclick="closeBottoms()">
-                    <div class="red"></div>
+                <div class="controls">
+                    <div class="red" onclick="closeBottoms()"></div>
                     <div class="yellow"></div>
                     <div class="green"></div>
                 </div>
@@ -479,8 +479,8 @@
     <div class="dresses-container" onclick="orderDiv(this)">
         <div id="dresses" class="window">
             <div id="dressesnav" class="navbar">
-                <div class="controls" onclick="closeDresses()">
-                    <div class="red"></div>
+                <div class="controls">
+                    <div class="red" onclick="closeDresses()"></div>
                     <div class="yellow"></div>
                     <div class="green"></div>
                 </div>
@@ -564,8 +564,8 @@
     <div class="outerwear-container" onclick="orderDiv(this)">
         <div id="outerwear" class="window">
             <div id="outerwearnav" class="navbar">
-                <div class="controls" onclick="closeOuterwear()">
-                    <div class="red"></div>
+                <div class="controls">
+                    <div class="red" onclick="closeOuterwear()"></div>
                     <div class="yellow"></div>
                     <div class="green"></div>
                 </div>
@@ -648,8 +648,8 @@
     <div class="shoes-container" onclick="orderDiv(this)">
         <div id="shoes" class="window">
             <div id="shoesnav" class="navbar">
-                <div class="controls" onclick="closeShoes()">
-                    <div class="red"></div>
+                <div class="controls">
+                    <div class="red" onclick="closeShoes()"></div>
                     <div class="yellow"></div>
                     <div class="green"></div>
                 </div>
@@ -726,8 +726,8 @@
     <div class="jewelry-container" onclick="orderDiv(this)">
         <div id="jewelry" class="window">
             <div id="jewelrynav" class="navbar">
-                <div class="controls" onclick="closeJewelry()">
-                    <div class="red"></div>
+                <div class="controls">
+                    <div class="red" onclick="closeJewelry()"></div>
                     <div class="yellow"></div>
                     <div class="green"></div>
                 </div>
@@ -905,7 +905,7 @@
         <div id="accessories" class="window">
             <div id="accessoriesnav" class="navbar">
                 <div class="controls" onclick="closeAccessories()">
-                    <div class="red"></div>
+                    <div class="red" onclick="closeAccessories()"></div>
                     <div class="yellow"></div>
                     <div class="green"></div>
                 </div>
@@ -1094,13 +1094,43 @@
     <div class="resume-container" onclick="orderDiv(this)">
         <div id="resume" class="window">
             <div id="resumenav" class="navbar">
-                <div class="controls" onclick="closeResume()">
-                    <div class="red"></div>
+                <div class="controls">
+                    <div class="red" onclick="closeResume()"></div>
                     <div class="yellow"></div>
                     <div class="green"></div>
                 </div>
                 <h2>experience</h2>
                 <div class="clear"></div>
+                <div id="text-edit">
+                    <div id="text-edit-1">
+                        <div class="font-box">
+                            <p>
+                                space-grotesk &nbsp;<i class="fa-solid fa-caret-down"></i>
+                            </p>
+                        </div>
+                        <div class="font-box">
+                            <p>
+                                regular &nbsp;<i class="fa-solid fa-caret-down"></i>
+                            </p>
+                        </div>
+                        <div class="font-box">
+                            <p>
+                                12 &nbsp;<i class="fa-solid fa-caret-down"></i>
+                            </p>
+                        </div>
+                        <div id="color-picker"></div>
+                    </div>
+                    <div id="text-edit-2">
+                        <p><i class="fa-solid fa-bold"></i></p>
+                        <p><i class="fa-solid fa-italic"></i></p>
+                        <p><i id="underline-icon" class="fa-solid fa-underline" style="border-right: none;"></i></p>
+                    </div>
+                    <div id="text-edit-3">
+                        <p><i class="fa-solid fa-align-left"></i></p>
+                        <p><i class="fa-solid fa-align-center"></i></p>
+                        <p><i class="fa-solid fa-align-right" style="border-right: none;"></i></p>
+                    </div>
+                </div>
             </div>
             <div id="resume-content" class="content">
                 <div class="section-title">

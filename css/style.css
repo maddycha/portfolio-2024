@@ -7,10 +7,52 @@ body {
 
 #resume {
     transform: scale(0);
+    background: #ffffff98;
+    backdrop-filter: blur(30px);
+    color: #1e1e1e;
+}
+
+#resume .separator{
+    border-bottom: solid rgba(0, 0, 0, 0.3) 1px;
+
 }
 
 .separator {
     border-bottom: solid rgba(255, 255, 255, 0.3) 1px;
+}
+
+.font-box{
+    border: solid 1px #1e1e1e40;
+    width: fit-content;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* margin-top:  */
+    height: 24px;
+}
+
+#color-picker{
+    width: 24px;
+    height: 24px;
+    background: #1e1e1edd;
+    border: solid 2px lightgray;
+    box-sizing: border-box;
+}
+
+#text-edit-1>*,#text-edit-2>*,#text-edit-3>*{
+    float: left;
+    margin-top: 8px;
+    margin-left: 6px;
+    border-radius: 8px;
+}
+
+#text-edit p{
+    font-size: 0.7rem;
+}
+
+#text-edit{
+    display: flex;
+    justify-content: space-between;
 }
 
 #links {
@@ -84,7 +126,6 @@ a {
 }
 
 .right-col {
-
     float: right;
 }
 
@@ -111,7 +152,6 @@ a {
 
 #left-arrow,#right-arrow{
     float: left;
-    font-size: 0.7rem;
     padding-right: 2px;
     margin: auto;
     width: 8px;
@@ -139,6 +179,27 @@ a {
     color: #1e1e1e70;
 }
 
+#text-edit-2 p i, #text-edit-3 p i{
+    border-right: solid 1px #1e1e1e30;
+    padding-right: 6px;
+    padding-left: 2px;
+}
+
+#text-edit-3 p i{
+    font-weight: 600;
+}
+
+#text-edit-3{
+    float: right;
+    padding-right: 6px;
+}
+
+#underline-icon{
+    font-size: 0.9rem;
+    padding-top: 5px;
+    font-weight: 600;
+}
+
 #search-inside{
     width: 100%;
 }
@@ -151,13 +212,13 @@ a {
 
 
 #search-bar{
-    /* background: white; */
     width: 100%;
     height: 36px;
 }
 
 i{
     color: #1e1e1e;
+    font-size: 0.8rem;
 }
 
 #navitems>p {
@@ -236,6 +297,7 @@ p {
     max-width: 50%;
     position: absolute;
     background: #1e1e1e90;
+    backdrop-filter: blur(20px);
     /* top: 120px;
     left: 200px; */
     transform: scale(0);
@@ -243,7 +305,6 @@ p {
     width: fit-content;
     filter: drop-shadow(0px 0px 10px #2e2e2e80);
     min-width: 600px;
-    backdrop-filter: blur(20px);
 }
 
 .float-right{
@@ -251,41 +312,21 @@ p {
 }
 
 #projects i{
-    color: #1e1e1e;
     padding: 12px;
-    font-size: 0.7rem;
     float: left;
-    height: 36px;
 }
 
 #tops, #bottoms, #dresses, #outerwear, #shoes, #jewelry, #accessories{
     width: 60%;
 }
 
-#resume {
-    top: 80px;
-    left: 500px;
-}
-
-#trash {
-    top: 180px;
-    left: 300px;
-}
-
-#projects {
-    top: 100px;
-    left: 270px;
-}
-
 #browser {
-    /* top: 140px;
-    left: 100px; */
     width: 70%;
 }
 
 .controls {
     width: 126px;
-    height: 100%;
+    height: 24px;
     z-index: 20;
 }
 
@@ -295,9 +336,8 @@ p {
 }
 
 .navbar {
-    height: 24px;
-    /* background: white; */
-    border-radius: 12px 12px 0px 0px;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 59%, rgba(235,235,235,1) 71%, rgba(246,246,246,1) 81%);    border-radius: 12px 12px 0px 0px;
     border-bottom: 2px white solid;
     width: 100%;
 }
@@ -323,11 +363,6 @@ h2 {
     overflow-y: scroll;
     max-height: 380px;
 
-}
-
-#tops {
-    top: 100;
-    left: 40;
 }
 
 .resume-item {
@@ -409,7 +444,7 @@ figure:last-of-type {
 
 
 
-.navbar div div {
+.navbar .controls div {
     float: left;
     width: 24px;
     height: 24px;
