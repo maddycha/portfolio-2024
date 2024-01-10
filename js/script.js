@@ -2,10 +2,19 @@
 dragElement(document.getElementById("browser"));
 dragElement(document.getElementById("resume"));
 dragElement(document.getElementById("projects"));
+dragElement(document.getElementById("trash"));
+dragElement(document.getElementById("tops"));
+dragElement(document.getElementById("bottoms"));
+dragElement(document.getElementById("dresses"));
+dragElement(document.getElementById("outerwear"));
+dragElement(document.getElementById("shoes"));
+dragElement(document.getElementById("jewelry"));
+dragElement(document.getElementById("accessories"));
 
 window.addEventListener('click', function(e){
   if (document.getElementById('find').contains(e.target)){
     document.getElementById("links").style.display = "block";
+    document.getElementById("links").style.zIndex = "2000";
   } else{
     document.getElementById("links").style.display = "none";
   }
@@ -27,25 +36,200 @@ function projects(){
   projectsFront();
 }
 
+function trash(){
+  document.getElementById("trash").style.transform = "scale(1)";
+  trashFront();
+}
+
+function tops(){
+  document.getElementById("tops").style.transform = "scale(1)";
+  topsFront();
+}
+
+function bottoms(){
+  document.getElementById("bottoms").style.transform = "scale(1)";
+  bottomsFront();
+}
+
+function dresses(){
+  document.getElementById("dresses").style.transform = "scale(1)";
+  dressesFront();
+}
+
+function outerwear(){
+  document.getElementById("outerwear").style.transform = "scale(1)";
+  outerwearFront();
+}
+
+function shoes(){
+  document.getElementById("shoes").style.transform = "scale(1)";
+  shoesFront();
+}
+
+function jewelry(){
+  document.getElementById("jewelry").style.transform = "scale(1)";
+  jewelryFront();
+}
+
+function accessories(){
+  document.getElementById("accessories").style.transform = "scale(1)";
+  accessoriesFront();
+}
+
+
 function aboutmeFront(){
   document.getElementById("browser").style.zIndex = "100";
   document.getElementById("resume").style.zIndex = "50";
   document.getElementById("projects").style.zIndex = "50";
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "50";
 }
 
 function resumeFront(){
   document.getElementById("browser").style.zIndex = "50";
   document.getElementById("resume").style.zIndex = "100";
   document.getElementById("projects").style.zIndex = "50";
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "50";
 }
 
 function projectsFront(){
   document.getElementById("browser").style.zIndex = "50";
   document.getElementById("resume").style.zIndex = "50";
   document.getElementById("projects").style.zIndex = "100";
-
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "50";
 }
 
+function trashFront(){
+  document.getElementById("trash").style.zIndex = "100";
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "500";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "50";
+}
+
+function topsFront(){
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "100";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "50";
+}
+
+function bottomsFront(){
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "100";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "50";
+}
+
+function dressesFront(){
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "100";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "50";
+}
+
+function shoesFront(){
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("shoes").style.zIndex = "100";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "50";
+}
+
+function outerwearFront(){
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "100";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "50";
+}
+
+function jewelryFront(){
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "50";
+  document.getElementById("jewelry").style.zIndex = "100";
+}
+
+function accessoriesFront(){
+  document.getElementById("trash").style.zIndex = "50";
+  document.getElementById("browser").style.zIndex = "50";
+  document.getElementById("resume").style.zIndex = "50";
+  document.getElementById("projects").style.zIndex = "50";
+  document.getElementById("tops").style.zIndex = "50";
+  document.getElementById("bottoms").style.zIndex = "50";
+  document.getElementById("dresses").style.zIndex = "50";
+  document.getElementById("shoes").style.zIndex = "50";
+  document.getElementById("outerwear").style.zIndex = "50";
+  document.getElementById("accessories").style.zIndex = "100";
+  document.getElementById("jewelry").style.zIndex = "50";
+}
 
 function closeAboutme(){
   document.getElementById("browser").style.transform = "scale(0)";
@@ -55,9 +239,44 @@ function closeResume(){
   document.getElementById("resume").style.transform = "scale(0)";
 }
 
+function closeTrash(){
+  document.getElementById("trash").style.transform = "scale(0)";
+}
+
 function closeProjects(){
   document.getElementById("projects").style.transform = "scale(0)";
 }
+
+function closeTops(){
+  document.getElementById("tops").style.transform = "scale(0)";
+}
+
+function closeBottoms(){
+  document.getElementById("bottoms").style.transform = "scale(0)";
+}
+
+function closeDresses(){
+  document.getElementById("dresses").style.transform = "scale(0)";
+}
+
+function closeOuterwear(){
+  document.getElementById("outerwear").style.transform = "scale(0)";
+}
+
+function closeShoes(){
+  document.getElementById("shoes").style.transform = "scale(0)";
+}
+
+function closeJewelry(){
+  document.getElementById("jewelry").style.transform = "scale(0)";
+}
+
+function closeAccessories(){
+  document.getElementById("accessories").style.transform = "scale(0)";
+}
+
+
+
 
 function dragElement(elmnt) {
 
