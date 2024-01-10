@@ -184,7 +184,7 @@ document.addEventListener('click', function (b) {
 
       if(projectsPos=="false"){
         document.getElementById("projects").style.left= getRandom(200,500)+'px'; // 👈🏼 Horizontally
-        document.getElementById("projects").style.top = getRandom(00, 300)+'px'; // 👈🏼 Vertically
+        document.getElementById("projects").style.top = getRandom(60, 300)+'px'; // 👈🏼 Vertically
       }
       projectsPos="true";
 
