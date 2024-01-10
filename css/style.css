@@ -108,6 +108,50 @@ a {
     padding-top: 10px;
 }
 
+#left-arrow,#right-arrow{
+    float: left;
+    font-size: 0.7rem;
+    padding-right: 2px;
+    margin: auto;
+    width: 8px;
+    height: 12px;
+    padding: 12px;
+}
+
+#search-inside p{
+    color: #1e1e1e;
+    font-size: 0.7rem;
+    float: left;
+    width: fit-content;
+    opacity: 1;
+    height: 24px;
+    margin-left: 6px;
+    padding-left: 6px;
+    margin-top: 6px;
+    background: #1e1e1e20;
+    border-radius: 90px;
+    width: calc(100% - 82px);
+}
+
+#info-icon{
+    padding-right: 8px;
+    color: #1e1e1e70;
+}
+
+#search-inside{
+    width: 100%;
+}
+
+#search-bar{
+    background: white;
+    width: 100%;
+    height: 36px;
+}
+
+i{
+    color: #1e1e1e;
+}
+
 #navitems>p {
     font-weight: 400;
 }
@@ -189,6 +233,8 @@ p {
     transform: scale(0);
     transition: transform 0.2s ease-out;
     width: fit-content;
+    filter: drop-shadow(0px 0px 10px #2e2e2e);
+    min-width: 600px;
 }
 
 #tops, #bottoms, #dresses, #outerwear, #shoes, #jewelry, #accessories{
