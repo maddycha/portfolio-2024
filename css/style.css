@@ -181,7 +181,7 @@ p {
 .window {
     border: 2px white solid;
     border-radius: 20px;
-    max-width: 60%;
+    max-width: 50%;
     position: absolute;
     background: #1e1e1e;
     top: 120px;
@@ -189,6 +189,10 @@ p {
     transform: scale(0);
     transition: transform 0.2s ease-out;
     width: fit-content;
+}
+
+#tops, #bottoms, #dresses, #outerwear, #shoes, #jewelry, #accessories{
+    width: 60%;
 }
 
 #resume {

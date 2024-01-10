@@ -64,8 +64,8 @@
     <img id="bg" src="imgs/desktop/desktop.jpeg">
 
 
-
-    <div id="browser" class="window" onmousedown="aboutmeFront()">
+    <div class="browser-container" onclick="orderDiv(this)">
+    <div id="browser" class="window">
         <div id="browsernav" class="navbar">
             <div class="controls" onclick="closeAboutme()">
                 <div class="red"></div>
@@ -92,9 +92,10 @@
             <div class="clear"></div>
        </div>
     </div>
+    </div>
 
-
-    <div id="projects" class="window" onmousedown="projectsFront();">
+    <div class="projects-container" onclick="orderDiv(this)">
+    <div id="projects" class="window">
         <div id="projectsnav" class="navbar">
             <div class="controls" onclick="closeProjects()">
                 <div class="red"></div>
@@ -106,41 +107,45 @@
         </div>
         <div id="projects-content" class="content">
 
-            <div class="folders" onclick="tops()">
+            <div id="wardrobe-folders">
+            <div class="folders" onclick="tops()" id="topslink">
                 <img class="desktopicon" src="imgs/desktop/tops.png">
                 <h6>tops</h6>
             </div>
-            <div class="folders" onclick="bottoms()">
+            <div class="folders" onclick="bottoms()" id="bottomslink">
                 <img class="desktopicon" src="imgs/desktop/bottoms.png">
                 <h6>bottoms</h6>
             </div>
-            <div class="folders" onclick="dresses()">
+            <div class="folders" onclick="dresses(),dressesFront()" id="dresseslink">
                 <img class="desktopicon" src="imgs/desktop/dresses.png">
                 <h6>dresses</h6>
             </div>
-            <div class="folders" onclick="outerwear()">
+            <div class="folders" onclick="outerwear()" id="outerwearlink">
                 <img class="desktopicon" src="imgs/desktop/outerwear.png">
                 <h6>outerwear</h6>
             </div>
-            <div class="folders" onclick="shoes()">
+            <div class="folders" onclick="shoes()" id="shoeslink">
                 <img class="desktopicon" src="imgs/desktop/shoes.png">
                 <h6>shoes</h6>
             </div>
 <div class="clear"></div>
 
-            <div class="folders" onclick="jewelry()">
+            <div class="folders" onclick="jewelry()" id="jewelrylink">
                 <img class="desktopicon" src="imgs/desktop/jewelry.png">
                 <h6>jewelry</h6>
             </div>
-            <div class="folders" onclick="accessories()">
+            <div class="folders" onclick="accessories()" id="accessorieslink">
                 <img class="desktopicon" src="imgs/desktop/accessories.png">
                 <h6>accessories</h6>
             </div>
             <div class="clear"></div>
         </div>
+        </div>
+    </div>
     </div>
 
-    <div id="tops" class="window" onmousedown="topsFront();">
+    <div class="tops-container" onclick="orderDiv(this)">
+    <div id="tops" class="window">
         <div id="topsnav" class="navbar">
             <div class="controls" onclick="closeTops()">
                 <div class="red"></div>
@@ -328,9 +333,10 @@
             </details>
         </div>
     </div>
+    </div>
 
-
-    <div id="bottoms" class="window" onmousedown="bottomsFront();">
+    <div class="bottoms-container" onclick="orderDiv(this)">
+    <div id="bottoms" class="window">
         <div id="bottomsnav" class="navbar">
             <div class="controls" onclick="closeBottoms()">
                 <div class="red"></div>
@@ -440,11 +446,12 @@
                 </div>
             </details>
         </div>
+        </div>
     </div>
 
 
-
-    <div id="dresses" class="window" onmousedown="dressesFront();">
+    <div class="dresses-container" onclick="orderDiv(this)">
+    <div id="dresses" class="window">
         <div id="dressesnav" class="navbar">
             <div class="controls" onclick="closeDresses()">
                 <div class="red"></div>
@@ -526,8 +533,10 @@
             </details>
         </div>
     </div>
+    </div>
 
-    <div id="outerwear" class="window" onmousedown="outerwearFront();">
+<div class="outerwear-container" onclick="orderDiv(this)">
+    <div id="outerwear" class="window">
         <div id="outerwearnav" class="navbar">
             <div class="controls" onclick="closeOuterwear()">
                 <div class="red"></div>
@@ -608,8 +617,10 @@
             </details>
         </div>
     </div>
+    </div>
 
-    <div id="shoes" class="window" onmousedown="shoesFront();">
+    <div class="shoes-container" onclick="orderDiv(this)">
+    <div id="shoes" class="window">
         <div id="shoesnav" class="navbar">
             <div class="controls" onclick="closeShoes()">
                 <div class="red"></div>
@@ -684,9 +695,10 @@
             </details>
         </div>
     </div>
+    </div>
 
-
-    <div id="jewelry" class="window" onmousedown="jewelryFront();">
+    <div class="jewelry-container" onclick="orderDiv(this)">
+    <div id="jewelry" class="window">
         <div id="jewelrynav" class="navbar">
             <div class="controls" onclick="closeJewelry()">
                 <div class="red"></div>
@@ -861,8 +873,10 @@
             </details>
         </div>
     </div>
+    </div>
 
-    <div id="accessories" class="window" onmousedown="accessoriesFront();">
+    <div class="accessories-container" onclick="orderDiv(this)">
+    <div id="accessories" class="window">
         <div id="accessoriesnav" class="navbar">
             <div class="controls" onclick="closeAccessories()">
                 <div class="red"></div>
@@ -1026,11 +1040,11 @@
             </details>
         </div>
     </div>
-
-
     </div>
 
-    <div id="trash" class="window" onmousedown="trashFront();">
+
+<div class="trash-container" onclick="orderDiv(this)">
+    <div id="trash" class="window">
         <div id="trashnav" class="navbar">
             <div class="controls" onclick="closeTrash()">
                 <div class="red"></div>
@@ -1040,13 +1054,16 @@
             <h2>trash</h2>
             <div class="clear"></div>
         </div>
-        <div id="trash-content" class="content">
+        <div id="browser-content" class="content">
 
-        </div>
+       </div>
     </div>
+</div>
 
 
-    <div id="resume" class="window" onmousedown="resumeFront();">
+
+<div class="resume-container" onclick="orderDiv(this)">
+    <div id="resume" class="window">
         <div id="resumenav" class="navbar">
             <div class="controls" onclick="closeResume()">
                 <div class="red"></div>
@@ -1118,6 +1135,7 @@
                     Minor in Media Design
                 </p>
             </div>
+        </div>
         </div>
 
     </div>
