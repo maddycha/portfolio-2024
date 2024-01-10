@@ -227,14 +227,33 @@ p {
     border-radius: 20px;
     max-width: 50%;
     position: absolute;
-    background: #1e1e1e;
+    background: #1e1e1e90;
     top: 120px;
     left: 200px;
     transform: scale(0);
     transition: transform 0.2s ease-out;
     width: fit-content;
-    filter: drop-shadow(0px 0px 10px #2e2e2e);
+    filter: drop-shadow(0px 0px 10px #2e2e2e80);
     min-width: 600px;
+    backdrop-filter: blur(20px);
+}
+
+#wardrobe-icons{
+    width: 100%;
+    background: white;
+    height: 36px;
+}
+
+.float-right{
+    float: right;
+}
+
+#projects i{
+    color: #1e1e1e;
+    padding: 12px;
+    font-size: 0.7rem;
+    float: left;
+    height: 36px;
 }
 
 #tops, #bottoms, #dresses, #outerwear, #shoes, #jewelry, #accessories{
@@ -423,9 +442,16 @@ figure:last-of-type {
     float: left;
     padding-right: 36px;
 }
-
+/*
 #projects .folders:nth-of-type(5){
     padding-right: 0;
+} */
+
+#tops, #bottoms, #dresses, #accessories, #shoes, #jewelry, #outerwear{
+    background: #ffffff10;
+    color: white;
+    backdrop-filter: blur(90px);
+
 }
 
 .folders img {
