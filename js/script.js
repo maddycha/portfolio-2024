@@ -9,6 +9,10 @@ var found = windows.findIndex(el => el == itemToFind)
 
 var windows = ["browser", "resume", "projects", "trash", "tops", "bottoms", "dresses", "outerwear", "shoes", "jewelry", "accessories"];
 
+
+
+var getRandom = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
+
 // Make the DIV element draggable:
 dragElement(document.getElementById("browser"));
 dragElement(document.getElementById("resume"));
@@ -30,7 +34,6 @@ function orderDiv(x) {
   var foundIdx = windows.findIndex(el => el == itemToFind);
   windows.splice(foundIdx, 1);
   windows.unshift(itemToFind);
-  console.log(windows);
 }
 
 
@@ -64,7 +67,6 @@ document.addEventListener('click', function (b) {
 
       for (var i = 0; i < windows.length; i++) {
         document.getElementById(windows[i]).style.zIndex = 10 - i;
-        console.log(windows[i] + i + document.getElementById(windows[i]).style.zIndex);
       }
     }
     else if(document.getElementById('outerwearlink').contains(b.target)){
@@ -75,7 +77,6 @@ document.addEventListener('click', function (b) {
 
       for (var i = 0; i < windows.length; i++) {
         document.getElementById(windows[i]).style.zIndex = 10 - i;
-        console.log(windows[i] + i + document.getElementById(windows[i]).style.zIndex);
       }
     }
 
@@ -87,7 +88,6 @@ document.addEventListener('click', function (b) {
 
       for (var i = 0; i < windows.length; i++) {
         document.getElementById(windows[i]).style.zIndex = 10 - i;
-        console.log(windows[i] + i + document.getElementById(windows[i]).style.zIndex);
       }
     }
 
@@ -99,7 +99,6 @@ document.addEventListener('click', function (b) {
 
       for (var i = 0; i < windows.length; i++) {
         document.getElementById(windows[i]).style.zIndex = 10 - i;
-        console.log(windows[i] + i + document.getElementById(windows[i]).style.zIndex);
       }
     }
 
@@ -111,13 +110,11 @@ document.addEventListener('click', function (b) {
 
       for (var i = 0; i < windows.length; i++) {
         document.getElementById(windows[i]).style.zIndex = 10 - i;
-        console.log(windows[i] + i + document.getElementById(windows[i]).style.zIndex);
       }
     }
   } else {
     for (var i = 0; i < windows.length; i++) {
       document.getElementById(windows[i]).style.zIndex = 10 - i;
-      console.log(windows[i] + i + document.getElementById(windows[i]).style.zIndex);
     }
   }});
 
@@ -127,7 +124,6 @@ document.addEventListener('click', function (b) {
       var foundIdx = windows.findIndex(el => el == itemToFind);
       windows.splice(foundIdx, 1);
       windows.unshift(itemToFind);
-      console.log("fdjskfjsdlk");
     }
 
 
@@ -141,17 +137,41 @@ document.addEventListener('click', function (b) {
     });
 
 
+    var aboutPos = "false";
+    var resumePos = "false";
+    var projectsPos = "false";
+    var topsPos = "false";
+    var bottomsPos = "false";
+    var dressesPos = "false";
+    var outerwearPos = "false";
+    var trashPos = "false";
+    var jewelryPos = "false";
+    var shoesPos = "false";
+    var accessoriesPos = "false";
 
     function aboutme() {
+
+      if(aboutPos=="false"){
+        document.getElementById("browser").style.left= getRandom(100,500)+'px'; // 👈🏼 Horizontally
+        document.getElementById("browser").style.top = getRandom(50, 200)+'px'; // 👈🏼 Vertically
+      }
+
+      aboutPos="true";
       document.getElementById("browser").style.transform = "scale(1)";
       itemToFind = "browser";
       var foundIdx = windows.findIndex(el => el == itemToFind);
       windows.splice(foundIdx, 1);
       windows.unshift(itemToFind);
-      console.log(windows)
     }
 
     function resume() {
+
+      if(resumePos=="false"){
+        document.getElementById("resume").style.left= getRandom(100,500)+'px'; // 👈🏼 Horizontally
+        document.getElementById("resume").style.top = getRandom(50, 129)+'px'; // 👈🏼 Vertically
+      }
+      resumePos="true";
+
       document.getElementById("resume").style.transform = "scale(1)";
       itemToFind = "resume";
       var foundIdx = windows.findIndex(el => el == itemToFind);
@@ -161,6 +181,13 @@ document.addEventListener('click', function (b) {
     }
 
     function projects() {
+
+      if(projectsPos=="false"){
+        document.getElementById("projects").style.left= getRandom(200,500)+'px'; // 👈🏼 Horizontally
+        document.getElementById("projects").style.top = getRandom(00, 300)+'px'; // 👈🏼 Vertically
+      }
+      projectsPos="true";
+
       document.getElementById("projects").style.transform = "scale(1)";
       itemToFind = "projects";
       var foundIdx = windows.findIndex(el => el == itemToFind);
@@ -170,6 +197,15 @@ document.addEventListener('click', function (b) {
     }
 
     function trash() {
+
+      if(trashPos=="false"){
+        document.getElementById("trash").style.left= getRandom(100,500)+'px'; // 👈🏼 Horizontally
+        document.getElementById("trash").style.top = getRandom(50, 300)+'px'; // 👈🏼 Vertically
+      }
+
+      trashPos="true";
+
+
       document.getElementById("trash").style.transform = "scale(1)";
       itemToFind = "trash";
       var foundIdx = windows.findIndex(el => el == itemToFind);
@@ -179,6 +215,14 @@ document.addEventListener('click', function (b) {
     }
 
     function tops() {
+
+      if(topsPos=="false"){
+        document.getElementById("tops").style.left= getRandom(100,500)+'px'; // 👈🏼 Horizontally
+        document.getElementById("tops").style.top = getRandom(50, 129)+'px'; // 👈🏼 Vertically
+      }
+
+      topsPos="true";
+
       document.getElementById("tops").style.transform = "scale(1)";
       itemToFind = "tops";
       var foundIdx = windows.findIndex(el => el == itemToFind);
@@ -188,6 +232,11 @@ document.addEventListener('click', function (b) {
     }
 
     function bottoms() {
+      if(bottomsPos=="false"){
+        document.getElementById("bottoms").style.left= getRandom(100,500)+'px'; // 👈🏼 Horizontally
+        document.getElementById("bottoms").style.top = getRandom(50, 129)+'px'; // 👈🏼 Vertically
+      }
+      bottomsPos="true";
       document.getElementById("bottoms").style.transform = "scale(1)";
       itemToFind = "bottoms";
       var foundIdx = windows.findIndex(el => el == itemToFind);
@@ -196,6 +245,11 @@ document.addEventListener('click', function (b) {
     }
 
     function dresses() {
+      if(dressesPos=="false"){
+        document.getElementById("dresses").style.left= getRandom(0,200)+'px'; // 👈🏼 Horizontally
+        document.getElementById("dresses").style.top = getRandom(50, 129)+'px'; // 👈🏼 Vertically
+      }
+      dressesPos="true";
       document.getElementById("dresses").style.transform = "scale(1)";
       itemToFind = "dresses";
       var foundIdx = windows.findIndex(el => el == itemToFind);
@@ -204,6 +258,11 @@ document.addEventListener('click', function (b) {
     }
 
     function outerwear() {
+      if(outerwearPos=="false"){
+        document.getElementById("outerwear").style.left= getRandom(100,800)+'px'; // 👈🏼 Horizontally
+        document.getElementById("outerwear").style.top = getRandom(50, 129)+'px'; // 👈🏼 Vertically
+      }
+      outerwearPos="true";
       document.getElementById("outerwear").style.transform = "scale(1)";
       itemToFind = "outerwear";
       var foundIdx = windows.findIndex(el => el == itemToFind);
@@ -212,6 +271,11 @@ document.addEventListener('click', function (b) {
     }
 
     function shoes() {
+      if(shoesPos=="false"){
+        document.getElementById("shoes").style.left= getRandom(40,400)+'px'; // 👈🏼 Horizontally
+        document.getElementById("shoes").style.top = getRandom(50, 129)+'px'; // 👈🏼 Vertically
+      }
+      shoesPos="true";
       document.getElementById("shoes").style.transform = "scale(1)";
       itemToFind = "shoes";
       var foundIdx = windows.findIndex(el => el == itemToFind);
@@ -220,6 +284,11 @@ document.addEventListener('click', function (b) {
     }
 
     function jewelry() {
+      if(jewelryPos=="false"){
+        document.getElementById("jewelry").style.left= getRandom(200,600)+'px'; // 👈🏼 Horizontally
+        document.getElementById("jewelry").style.top = getRandom(50, 129)+'px'; // 👈🏼 Vertically
+      }
+      jewelryPos="true";
       document.getElementById("jewelry").style.transform = "scale(1)";
       itemToFind = "jewelry";
       var foundIdx = windows.findIndex(el => el == itemToFind);
@@ -228,6 +297,11 @@ document.addEventListener('click', function (b) {
     }
 
     function accessories() {
+      if(accessoriesPos=="false"){
+        document.getElementById("accessories").style.left= getRandom(0,600)+'px'; // 👈🏼 Horizontally
+        document.getElementById("accessories").style.top = getRandom(50, 129)+'px'; // 👈🏼 Vertically
+      }
+      accessoriesPos="true";
       document.getElementById("accessories").style.transform = "scale(1)";
       itemToFind = "accessories";
       var foundIdx = windows.findIndex(el => el == itemToFind);

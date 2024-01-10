@@ -228,8 +228,8 @@ p {
     max-width: 50%;
     position: absolute;
     background: #1e1e1e90;
-    top: 120px;
-    left: 200px;
+    /* top: 120px;
+    left: 200px; */
     transform: scale(0);
     transition: transform 0.2s ease-out;
     width: fit-content;
@@ -276,8 +276,8 @@ p {
 }
 
 #browser {
-    top: 140px;
-    left: 100px;
+    /* top: 140px;
+    left: 100px; */
     width: 70%;
 }
 
