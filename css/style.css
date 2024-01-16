@@ -594,7 +594,7 @@ summary {
 
 #no-laptop img {
     width: 60%;
-    padding-top: 2rem;
+    padding-bottom: 1.4rem;
 }
 
 #no-laptop h1 {
@@ -624,17 +624,17 @@ summary {
 
     .tablet-left {
         width: 40%;
-        float: right;
+        float: left;
     }
 
     .tablet-right {
         width: 60%;
-        float: right;
+        float: left;
     }
 
     #no-laptop img {
         width: 100%;
-        padding-top: 0rem;
+        padding-bottom: 0rem;
         padding-right: 2rem;
         box-sizing: border-box;
     }
