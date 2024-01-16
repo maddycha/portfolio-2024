@@ -286,9 +286,10 @@ body {
 }
 
 p {
-    line-height: 1.5rem;
-    font-size: 0.9rem;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
     opacity: 0.8;
+    padding-bottom: 0.6rem;
 }
 
 #navitems p {
@@ -377,7 +378,7 @@ h2 {
 }
 
 .resume-item {
-    margin-bottom: 2.4rem;
+    margin-bottom: 2rem;
 }
 
 .resume-item:last-child {
@@ -606,9 +607,12 @@ summary {
 
 #no-laptop-content {
     width: 60%;
-    height: 100%;
     height: fit-content;
-    margin: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
 }
 
 @media screen and (pointer:none),
